@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil - TaskFlow{% endblock %}
+{% block body %}
+<section class="text-center mb-5">
+<h1 class="display-5 fw-bold mb-3">
+{{ slogan }}
+</h1>
+<p class="lead text-secondary">
+Bienvenue sur {{ application }}.
+Gérez vos projets et vos tâches
+dans une application simple.
+</p>
+<a href="{{ path('app_about') }}"
+class="btn btn-primary btn-lg mt-3">
+Découvrir TaskFlow
+</a>
+</section>
+<div class="row g-4">
+<div class="col-12 col-md-6">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+<h2 class="h4 card-title">
+Mes projets
+</h2>
+<p class="card-text">
+Créez des projets et
+centralisez vos activités.
+</p>
+<span class="badge text-bg-secondary">
+Disponible bientôt
+</span>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<div class="card h-100 shadow-sm">
+<div class="card-body">
+<h2 class="h4 card-title">
+Mes tâches
+</h2>
+<p class="card-text">
+Suivez les tâches et
+leur état d'avancement.
+</p>
+<span class="badge text-bg-secondary">
+Disponible bientôt
+</span>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

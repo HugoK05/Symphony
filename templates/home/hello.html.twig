@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %}Bienvenue - TaskFlow{% endblock %}
+{% block body %}
+<div class="alert alert-primary">
+<h1 class="h4">
+Bonjour {{ prenom }} !
+</h1>
+
+<p class="mb-0">
+Bienvenue sur TaskFlow.
+</p>
+</div>
+<a href="{{ path('app_home') }}"
+class="btn btn-secondary">
+Retour à l'accueil
+</a>
+{% endblock %}

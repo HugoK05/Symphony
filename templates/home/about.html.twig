@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}À propos - TaskFlow{% endblock %}
+{% block body %}
+<h1 class="mb-4">À propos de TaskFlow</h1>
+<div class="card shadow-sm">
+<div class="card-body">
+<p>
+TaskFlow est une application
+pédagogique de gestion
+de projets et de tâches.
+</p>
+<h2 class="h5 mt-4">
+Technologies utilisées
+</h2>
+<ul class="list-group">
+<li class="list-group-item">
+PHP et Symfony
+</li>
+<li class="list-group-item">
+Twig et Bootstrap 5
+</li>
+<li class="list-group-item">
+Doctrine et MySQL
+</li>
+</ul>
+<a href="{{ path('app_home') }}"
+class="btn btn-outline-primary mt-4">
+Retour à l'accueil
+</a>
+</div>
+</div>
+{% endblock %}
